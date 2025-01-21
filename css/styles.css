@@ -1,10 +1,6 @@
 body {
-    font-family: 'Merriweather', serif; /* Fuente más elegante */
     margin: 0;
     padding: 0;
-    color: #A294F9; /* Color principal, suave y elegante */
-    line-height: 1.6;
-    background-color: #F5EFFF; /* Fondo suave y calmado */
 }
 
 /* Header styles */
@@ -274,5 +270,242 @@ footer {
 
     .footer-left p, .footer-right p {
         font-size: 1rem; /* Ajusta el tamaño del texto */
+    }
+}
+
+/* Sección de Inicio */
+#inicio {
+    background-color: #F7F3FF; /* Fondo suave y profesional */
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Contenedor del Hero */
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Hacerlo responsive */
+}
+
+/* Texto del Hero */
+.hero-text {
+    flex: 1;
+    max-width: 600px;
+    text-align: center; /* Centrado por si está en móvil */
+}
+
+.main-title {
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+    color: #6F5D44;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #A294F9; /* Resalta el nombre */
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* Botón de llamada a la acción */
+.cta-button {
+    display: inline-block;
+    background-color: #A294F9;
+    color: #FFF;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #6F5D44;
+    transform: scale(1.05);
+}
+
+/* Imagen del Hero */
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        margin-bottom: 30px;
+    }
+}
+
+
+/* Servicios Previos */
+#servicios-previa {
+    background-color: #FFF;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #6F5D44;
+}
+
+.services-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #6F5D44;
+    margin-bottom: 15px;
+}
+
+.services-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.services-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #F7F3FF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-card img {
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #6F5D44;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Sección de notas */
+#notas-importantes {
+    background-color: #F7F7FC;
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.notas-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.notas-titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #6F5D44;
+    margin-bottom: 30px;
+    font-family: 'Satisfy', cursive;
+}
+
+.nota {
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.nota-titulo {
+    font-size: 1.8rem;
+    color: #6F5D44;
+    margin-bottom: 10px;
+}
+
+.nota-descripcion {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.nota-destacado {
+    font-weight: bold;
+    color: #A294F9;
+}
+
+.nota-firma {
+    text-align: right;
+    font-style: italic;
+    color: #555;
+}
+
+.nota-lista {
+    list-style: disc;
+    margin-left: 20px;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .notas-titulo {
+        font-size: 2rem;
+    }
+
+    .nota-titulo {
+        font-size: 1.5rem;
+    }
+
+    .nota-descripcion {
+        font-size: 1rem;
     }
 }
