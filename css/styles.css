@@ -9,7 +9,7 @@ body {
 
 /* Header styles */
 header {
-    background-color: #CDC1FF; /* Fondo suave con un toque lavanda */
+    background-color: #D5CFFF; /* Fondo suave con un toque lavanda */
     color: #FFF;
     display: flex;
     flex-direction: column;
@@ -130,7 +130,7 @@ header h1::after {
 
 /* Footer styles */
 footer {
-    background-color: #CDC1FF; /* Color de fondo */
+    background-color: #D5CFFF; /* Color de fondo */
     color: #333; /* Texto oscuro */
     padding: 30px 20px;
     font-family: 'Poppins', sans-serif;
