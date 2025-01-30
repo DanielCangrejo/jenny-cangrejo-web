@@ -27,8 +27,9 @@
         <nav>
             <ul>
                 <li><a href="#inicio" class="active">Inicio</a></li>
-                <li><a href="#acerca">Acerca de mí</a></li>
+                <li><a href="#about-me">Acerca de mí</a></li>
                 <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#ayudas">Recursos</a></li>
                 <li><a href="#contacto">Contáctame</a></li>
             </ul>
         </nav>
@@ -150,6 +151,100 @@
         </div>
     </section>
 
+    <!-- About me -->  
+    <section id="about-me" style="display: none;">
+        <section id="mi-historia" class="about-section">
+            <div class="about-container">
+                <div class="about-imagen">
+                    <img src="assets/jenny-logo3.png" alt="Jenny Carolina Cangrejo Saénz">
+                </div>
+                <div class="about-texto">
+                    <h2>Jenny Carolina Cangrejo Saénz</h2>
+                    <p>
+                        Soy contadora profesional con más de 15 años de experiencia y una especialización en Gerencia y Administración Tributaria. 
+                        Desde el inicio de mi carrera, he trabajado con una gran pasión por las finanzas, ayudando a personas y empresas a gestionar 
+                        sus recursos de manera eficiente. Además, me mantengo activa en el mercado fortaleciendo y promoviendo mi marca personal, 
+                        compartiendo información útil sobre temas tributarios, lo que me ha permitido destacar en mi área. Mi objetivo es seguir ofreciendo valor a mis clientes, 
+                        siempre evolucionando para mejorar su situación financiera.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="experiencia" class="about-section">
+            <h2 class="titulo-experiencia">Experiencia</h2>
+            <div class="experiencia-container">
+                <div class="experiencia-card">
+                    <h3>Contadora Profesional</h3>
+                    <p><strong>Fundación Universitaria Compensar</strong> - 2008 - 2013</p>
+                    <p>Durante este tiempo, adquirí conocimientos fundamentales en contabilidad y finanzas, preparándome para enfrentar los retos del sector tributario y de auditoría. Trabajé en la gestión de estados financieros y análisis de impuestos.</p>
+                </div>
+                <div class="experiencia-card">
+                    <h3>Especialista en Gerencia y Administración Tributaria</h3>
+                    <p><strong>Universidad Externado de Colombia</strong> - 2013 - 2015</p>
+                    <p>Con este programa, profundicé en la legislación tributaria y la administración de impuestos, enfocándome en las necesidades del contribuyente y en la optimización de los recursos fiscales de las empresas.</p>
+                </div>
+                <div class="experiencia-card">
+                    <h3>Consultora Independiente</h3>
+                    <p><strong>Servicios Independientes</strong> - 2015 - Actualidad</p>
+                    <p>Como consultora, ofrezco asesoría a personas y empresas en el ámbito tributario, fiscal y financiero. Mi trabajo se basa en crear soluciones personalizadas para optimizar los procesos y evitar sanciones fiscales.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Valores Profesionales 
+        <section id="valores-profesionales">
+            <h2>Mis Valores Profesionales</h2>
+            <div class="valores-container">
+                <div class="valor-item">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Compromiso</h3>
+                    <p>
+                        Mi trabajo es una extensión de mi pasión por lo que hago. Siempre me esfuerzo por ofrecer soluciones a tiempo, asegurando que cada cliente reciba la atención que merece.
+                    </p>
+                </div>
+                <div class="valor-item">
+                    <i class="fas fa-gavel"></i>
+                    <h3>Integridad</h3>
+                    <p>
+                        La honestidad y la ética son fundamentales en todas mis decisiones. Siempre actúo con transparencia, buscando el bienestar de mis clientes y el cumplimiento de sus necesidades tributarias.
+                    </p>
+                </div>
+                <div class="valor-item">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Excelencia</h3>
+                    <p>
+                        Busco mejorar continuamente mis conocimientos y habilidades para ofrecer un servicio de alta calidad, alineado con las mejores prácticas y actualizaciones del sector.
+                    </p>
+                </div>
+            </div>
+        </section> -->
+            
+        <section id="foto-final">
+            <div class="wrapper">
+                <div class="grid">
+                    <div class="item">
+                        <div class="polaroid">
+                            <img src="assets/event-logo1.png">
+                            <div class="caption">Evento de Empresarios 2025</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="polaroid">
+                            <img src="assets/event-logo2.png">
+                            <div class="caption">Conferencia Bitcoins</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="polaroid">
+                            <img src="assets/team-logo.png">
+                            <div class="caption">Equipo de Trabajo</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
     <!-- footer -->
     <footer>
         <div class="footer-container">
@@ -194,7 +289,7 @@
     function hideAllSections() {
         const sections = document.querySelectorAll('section');
         sections.forEach(section => {
-            console.log("Section: " + section.id)
+            //console.log("Section: " + section.id)
             section.style.display = 'none'; //Updating attr's section
         });
     }
@@ -216,7 +311,7 @@
         //Iterate over all subsections of the main section to show them 
         if (subsections.length > 0) { 
             subsections.forEach(section => {
-                console.log("Section: " + section.id)
+                // console.log("Section: " + section.id)
                 section.style.display = 'block';
             });
         }
@@ -247,6 +342,15 @@
             e.preventDefault();  // To avoid refreshing the page
             const sectionId = this.getAttribute('href').substring(1); // Remove # to get id dynamically
             showSection(sectionId); 
+            
+            // Remove active class for all nav elements
+            document.querySelectorAll('a').forEach(link => {
+                link.classList.remove('active');
+            });
+
+            // Add active class to <a> cliked
+            this.classList.add('active');
+            
         });
     });
 
