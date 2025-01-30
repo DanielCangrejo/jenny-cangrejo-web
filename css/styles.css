@@ -3,14 +3,14 @@ body {
     padding: 0;
 }
 
-/* Header styles */
+/* ------------------------- Header styles -------------------------*/
 header {
-    background-color: #D5CFFF; /* Fondo suave con un toque lavanda */
+    background-color: #D5CFFF; /*  Main color - Soft blue */
     color: #FFF;
     display: flex;
     flex-direction: column;
     padding: 20px 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     align-items: center;
     box-sizing: border-box;
 }
@@ -21,14 +21,14 @@ header {
     justify-content: center;
     gap: 20px;
     width: 100%;
-    flex-wrap: wrap; /* Asegura que los elementos se ajusten en pantallas pequeñas */
+    flex-wrap: wrap; /* Responsive */
 }
 
 header img {
-    width: 150px; /* Tamaño adecuado para el logo */
+    width: 150px; /* Logo size */
     height: auto;
-    border-radius: 50%; /* Bordes redondeados */
-    margin-bottom: 10px; /* Añadir espacio entre el logo y el texto */
+    border-radius: 50%; /* Rounded Edges */
+    margin-bottom: 10px; /* Space between logo and text */
 }
 
 .text-container {
@@ -36,20 +36,20 @@ header img {
 }
 
 header h1 {
-    font-family: 'Satisfy', cursive; /* Aplica la fuente Satisfy */
+    font-family: 'Satisfy', cursive; /* Satisfy font */
     margin: 0;
-    font-size: 2.5em; /* Ajusta el tamaño según lo necesites */
+    font-size: 2.5em; /* font size*/
     color: #6F5D44;
     font-weight: 600;
 }
 
 header p {
     margin: 10px 0 0;
-    font-size: 1.2em; /* Aumento en el tamaño de la fuente */
-    color: #6F5D44; /* Color más oscuro para el texto */
+    font-size: 1.2em; 
+    color: #6F5D44; /* secondary color -  dark brown */
 }
 
-/* Navigation styles */
+/* Nav Styles */
 nav ul {
     list-style: none;
     display: flex;
@@ -59,7 +59,7 @@ nav ul {
 }
 
 nav a {
-    font-family: 'Poppins', sans-serif; /* Aplica la fuente Poppins */
+    font-family: 'Poppins', sans-serif; /* Poppins font */
     text-decoration: none;
     font-size: 1.2em;
     color: #6F5D44;
@@ -69,8 +69,8 @@ nav a {
 
 nav a:hover,
 nav a.active {
-    color: #A294F9; /* Color cuando está activo o en hover */
-    transform: scale(1.1); /* Efecto de zoom */
+    color: #A294F9; /* Apply color when is active */
+    transform: scale(1.1); /* Zoom effect */
 }
 
 /* Extra styles */
@@ -96,53 +96,53 @@ header h1::after {
     }
 
     header img {
-        width: 120px; /* Reduce el tamaño del logo en pantallas pequeñas */
-        margin-bottom: 15px; /* Más espacio entre el logo y el texto */
+        width: 120px; /* Reduce logo size in small screens */
+        margin-bottom: 15px; /* More space between logo and text */
     }
 
     header h1 {
-        font-size: 2em; /* Ajusta el tamaño del encabezado */
+        font-size: 2em; /* Adjust the title header size */
     }
 
     header p {
-        font-size: 1.1em; /* Ajusta el tamaño del párrafo */
+        font-size: 1.1em; /* Adjust font size */
     }
 
     nav ul {
         flex-direction: column;
         gap: 15px;
-        margin-top: 10px; /* Más espacio arriba */
+        margin-top: 10px; /* More top space */
     }
 
     nav a {
-        font-size: 1.1em; /* Ajusta el tamaño de los enlaces */
+        font-size: 1.1em; /* Adjust the size of the nav elements */
     }
 
     header h1::after {
-        width: 100%; /* La línea se adapta al 100% del ancho */
+        width: 100%; /* Adjust line to the width screen */
     }
 }
 
 
-/* Footer styles */
+/*-----------------------------------------  Footer styles --------------------------------------- */
 footer {
-    background-color: #D5CFFF; /* Color de fondo */
-    color: #333; /* Texto oscuro */
+    background-color: #D5CFFF; /* Background color */
+    color: #333; /* Dark text */
     padding: 30px 20px;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
-/* Contenedor principal */
+/* Main container */
 .footer-container {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    flex-wrap: wrap; /* Asegura que sea responsive */
+    flex-wrap: wrap; /* responsive */
     gap: 20px;
 }
 
-/* Sección izquierda */
+/* Left section */
 .footer-left {
     flex: 1;
     text-align: center;
@@ -152,7 +152,7 @@ footer {
     font-family: 'Satisfy', cursive; 
     font-size: 2em;
     margin-bottom: 10px;
-    color: #6F5D44; /* Marrón oscuro */
+    color: #6F5D44; /* secondary color- dark brown */
 }
 
 .footer-left p {
@@ -167,31 +167,30 @@ footer {
     font-size: 1.5rem !important;
 }
 
-/* Línea divisoria */
+/* Vertical divider line */
 .footer-divider {
     width: 3px;
-    background-color: #6F5D44; /* Color de la línea */
+    background-color: #6F5D44; /* Line color */
     height: auto;
-    align-self: stretch; /* Asegura que se extienda verticalmente */
-    display: block; /* Asegura que la línea se vea */
+    align-self: stretch; /* Stretches vertically */
+    display: block; /* Ensure the element is displayed */
     margin-top: 20px;
 }
 
-/* Sección derecha */
+/* Right section */
 .footer-right {
     flex: 1;
     text-align: center;
-    margin-top: 20px; /* Añadimos margen superior en pantallas pequeñas */
 }
 
 .footer-right h2 {
     font-family: 'Satisfy', cursive; 
     font-size: 2em;
     margin-bottom: 10px;
-    color: #6F5D44; /* Marrón oscuro */
+    color: #6F5D44; 
 }
 
-/* Redes sociales */
+/* Social Media */
 .social-links {
     display: flex;
     align-items: center;
@@ -203,9 +202,9 @@ footer {
 .social-icon {
     color: #333;
     font-size: 1.5em;
-    background-color: #fff; /* Fondo blanco */
+    background-color: #fff; /* White background */
     padding: 10px;
-    border-radius: 50%; /* Hacer los iconos circulares */
+    border-radius: 50%; /* Circular icons */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
@@ -216,19 +215,28 @@ footer {
 }
 
 .social-icon:hover {
-    background-color: #A294F9; /* Hover con un color de la paleta */
-    transform: scale(1.1); /* Efecto de zoom */
+    background-color: #A294F9; /* Hover color */
+    transform: scale(1.1); /* Zoom effect */
 }
 
-/* Derechos reservados */
+/* Rights reserved */
 .footer-right p {
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
-    color: #555; /* Gris más suave */
+    color: #555; /* tertiary color - grey*/
     margin-top: 20px;
 }
 
-/* Responsivo */
+.unplash-credits, .developed-by {
+    margin: 0px 0 !important;
+    font-size: 1rem !important;
+}
+
+.copyright {
+    margin-bottom: 0px !important;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
@@ -237,50 +245,50 @@ footer {
     }
 
     .footer-left, .footer-right {
-        flex: 1 1 100%; /* Asegura que ambas secciones ocupen el 100% del ancho */
-        text-align: center; /* Centra los textos */
+        flex: 1 1 100%; /* Ensure both sections fill 100% of the width */
+        text-align: center; /* Center texts */
     }
 
-    /* Sección izquierda */
+    /* Left section */
     .footer-left {
-        margin-bottom: 20px; /* Añade espacio entre las secciones */
+        margin-bottom: 20px; /* Space between sections */
     }
 
-    /* Sección derecha */
+    /* Right section */
     .footer-right {
         margin-top: 20px;
     }
 
-    /* Iconos de redes sociales */
+    /* Social Media Icons */
     .social-links {
-        gap: 10px; /* Reduce el espacio entre iconos */
+        gap: 10px; /* Reduce space between icons */
     }
 
     .social-icon {
-        font-size: 1.3em; /* Ajusta el tamaño de los iconos */
+        font-size: 1.3em; /* Adjust size icons */
     }
 
     .footer-divider {
-        display: none; /* Oculta la línea divisoria en pantallas pequeñas */
+        display: none; /* Hide divider line */
     }
 
     .footer-left h2, .footer-right h2 {
-        font-size: 1.5em; /* Ajusta el tamaño de los encabezados */
+        font-size: 1.5em; /* Adjust titles size */
     }
 
     .footer-left p, .footer-right p {
-        font-size: 1rem; /* Ajusta el tamaño del texto */
+        font-size: 1rem; /* Ajusta font size texts */
     }
 }
 
-/* Sección de Inicio */
+/* -------------------------- Index section ------------------------------------*/
 #inicio {
-    background-color: #F7F3FF; /* Fondo suave y profesional */
+    background-color: #F7F3FF; /* Background Color */
     padding: 60px 20px;
     font-family: 'Poppins', sans-serif;
 }
 
-/* Contenedor del Hero */
+/* hero container */
 .hero-container {
     display: flex;
     align-items: center;
@@ -288,14 +296,14 @@ footer {
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
-    flex-wrap: wrap; /* Hacerlo responsive */
+    flex-wrap: wrap; /* responsive */
 }
 
-/* Texto del Hero */
+/* hero text */
 .hero-text {
     flex: 1;
     max-width: 600px;
-    text-align: center; /* Centrado por si está en móvil */
+    text-align: center; /* center for smartphones */
 }
 
 .main-title {
@@ -306,7 +314,7 @@ footer {
 }
 
 .highlight {
-    color: #A294F9; /* Resalta el nombre */
+    color: #A294F9; /* Highlight name */
 }
 
 .subtitle {
@@ -322,7 +330,7 @@ footer {
     margin-bottom: 25px;
 }
 
-/* Botón de llamada a la acción */
+/* Action Button */
 .cta-button {
     display: inline-block;
     background-color: #A294F9;
@@ -341,7 +349,7 @@ footer {
     transform: scale(1.05);
 }
 
-/* Imagen del Hero */
+/* Hero image */
 .hero-image {
     flex: 1;
     text-align: center;
@@ -367,7 +375,7 @@ footer {
 }
 
 
-/* Servicios Previos */
+/* Summary Services */
 #servicios-previa {
     background-color: #FFF;
     padding: 60px 20px;
@@ -436,7 +444,82 @@ footer {
     }
 }
 
-/* Sección de notas */
+/* Reminder message */
+#mensaje-recordativo {
+    background-color: #F9F9FF; /* Soft background */
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.recordativo-container {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    padding: 20px; /* general space */
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box; /* Ensure that padding does not affect the total width */
+}
+
+.recordativo-imagen img {
+    width: 400px; /* Adjusted size */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recordativo-texto {
+    flex: 1;
+    padding-left: 20px; /* Reduce padding for more space between text and image */
+}
+
+.recordativo-texto h2 {
+    font-size: 2rem;
+    color: #6F5D44;
+    margin-bottom: 15px;
+    font-family: 'Satisfy', cursive;
+}
+
+.recordativo-texto p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.recordativo-texto .firma {
+    font-style: italic;
+    color: #6F5D44;
+}
+
+/* Responsive Desing */
+@media (max-width: 768px) {
+    .recordativo-container {
+        flex-direction: column; /* Change to vertical layout */
+        padding: 20px 15px; /* Less padding */
+        text-align: center; /* Center text */
+    }
+
+    .recordativo-imagen img {
+        width: 250px; /* Smaller size */
+        margin-bottom: 20px; /* Space between image and text */
+    }
+
+    .recordativo-texto h2 {
+        font-size: 1.8rem;
+    }
+
+    .recordativo-texto {
+        padding-left: 0; /* Delete lateral padding */
+    }
+    .recordativo-texto p {
+        font-size: 1rem;
+    }
+}
+
+
+/* ------------------ Reminder notes ------------------ */
 #notas-importantes {
     background-color: #F7F7FC;
     padding: 40px 20px;
@@ -495,7 +578,7 @@ footer {
     line-height: 1.6;
 }
 
-/* Responsivo */
+/* Responsive desing */
 @media (max-width: 768px) {
     .notas-titulo {
         font-size: 2rem;
@@ -508,4 +591,44 @@ footer {
     .nota-descripcion {
         font-size: 1rem;
     }
+}
+
+/* ------------------ Hidden Developer Section ------------------- */
+#about-developer {
+    background-color: #f4f4f4; 
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.easter-egg-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.easter-egg-container h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.easter-egg-container p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.easter-egg-container a {
+    color: #4e73df; /* Color to href */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.easter-egg-container a:hover {
+    color: #2a3d88; /* Hover color */
 }

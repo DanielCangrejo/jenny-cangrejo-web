@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios Contables - Jenny Cangrejo</title>
     
+    <!--libraries-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
     <!-- logos-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <!-- fuentes -->
+    <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- header -->
     <header>
         <div class="header-content">
             <img src="assets/logo1.png" alt="Logo de Jenny Cangrejo">
@@ -31,88 +34,126 @@
         </nav>
     </header>
 
+    <!-- index sections -->
     <section id="inicio">
-        <div class="hero-container">
-            <div class="hero-text">
-                <h1 class="main-title">Hola, soy <span class="highlight">Jenny Carolina Cangrejo Sáenz</span></h1>
-                <p class="subtitle">Contadora Pública · Asesoría Financiera · Consultoría Tributaria</p>
-                <p class="description">
-                    Con más de 15 años de experiencia, me dedico a ayudar a personas y empresas a gestionar sus finanzas de manera eficiente. Mi enfoque personalizado asegura resultados efectivos y a la medida de tus necesidades.
+        <section id="introduction">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <h1 class="main-title">Hola, soy <span class="highlight">Jenny Carolina Cangrejo Sáenz</span></h1>
+                    <p class="subtitle">Contadora Pública · Asesoría Financiera · Consultoría Tributaria</p>
+                    <p class="description">
+                        Con más de 15 años de experiencia, me dedico a ayudar a personas y empresas a gestionar sus finanzas de manera eficiente. Mi enfoque personalizado asegura resultados efectivos y a la medida de tus necesidades.
+                    </p>
+                    <a href="#contacto" class="cta-button">Contáctame</a>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/jenny-logo1.png" alt="Foto profesional de Jenny Carolina" />
+                </div>
+            </div>
+        </section>
+        <section id="servicios-previa">
+            <div class="services-container">
+                <h2 class="services-title">¿Cómo puedo ayudarte?</h2>
+                <p class="services-subtitle">
+                    Ofrezco servicios personalizados para mejorar tus finanzas, cumplir con tus obligaciones tributarias y llevar tus negocios al siguiente nivel.
                 </p>
-                <a href="#contacto" class="cta-button">Contáctame</a>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <img src="assets/previus-services-logo1.png" alt="Icono Contabilidad" />
+                        <h3>Gestión Contable</h3>
+                        <p>Mantén tus registros contables organizados y cumple con las normativas de manera efectiva.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="assets/previus-services-logo2.png" alt="Icono Finanzas" />
+                        <h3>Asesoría Financiera</h3>
+                        <p>Optimiza tus ingresos y toma decisiones financieras acertadas con estrategias personalizadas.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="assets/previus-services-logo3.png" alt="Icono Tributario" />
+                        <h3>Consultoría Tributaria</h3>
+                        <p>Minimiza riesgos fiscales y garantiza el cumplimiento tributario de tu empresa.</p>
+                    </div>
+                </div>
             </div>
-            <div class="hero-image">
-                <img src="assets\jenny-logo1.png" alt="Foto profesional de Jenny Carolina" />
+        </section>
+        <section id="mensaje-recordativo">
+            <div class="recordativo-container">
+                <div class="recordativo-imagen">
+                    <img src="assets/jenny-logo2.png" alt="Jenny - Contadora profesional">
+                </div>
+                <div class="recordativo-texto">
+                    <h2>No descuides tus impuestos</h2>
+                    <p>
+                        Ignorar tus responsabilidades fiscales puede traerte sanciones y multas que son completamente evitables. 
+                        Mantén tus obligaciones al día y protege tu estabilidad financiera. Recuerda, ¡un asesoramiento oportuno 
+                        puede marcar la diferencia!
+                    </p>
+                    <p class="firma">- Jenny Cangrejo, contadora profesional</p>
+                </div>
             </div>
-        </div>
+        </section>
+        <section id="notas-importantes">
+            <div class="notas-container">
+                <h2 class="notas-titulo">Notas Importantes</h2>
+        
+                <!-- First note -->
+                <div class="nota">
+                    <h3 class="nota-titulo">Impuesto ICA Bogotá</h3>
+                    <p class="nota-descripcion">
+                        ¿Eres profesional independiente o tienes un contrato de prestación de servicios? 
+                        Sabías que si obtuviste ingresos superiores a 
+                        <span class="nota-destacado">$81.982.396</span> durante el año 2024, estás obligado a presentar la declaración del impuesto de industria y comercio en Bogotá.
+                    </p>
+                    <p class="nota-firma">@Jennycangrejo</p>
+                </div>
+        
+                <!-- Second note -->
+                <div class="nota">
+                    <h3 class="nota-titulo">Aviso Importante</h3>
+                    <p class="nota-descripcion">
+                        Según la <span class="nota-destacado">Resolución 139 de 2023</span>, todos los declarantes, incluso los voluntarios, deben hacerlo con firma electrónica a partir de hoy, según la <span class="nota-destacado">DIAN</span>.
+                    </p>
+                    <p class="nota-firma">@Jennycangrejo</p>
+                </div>
+        
+                <!-- Third note -->
+                <div class="nota">
+                    <h3 class="nota-titulo">Proyecto Resolución</h3>
+                    <p class="nota-descripcion">
+                        Calendario de implementación para el documento equivalente electrónico tiquete de máquina registradora con sistema P.O.S., según el tipo de contribuyente:
+                    </p>
+                    <ul class="nota-lista">
+                        <li><span class="nota-destacado">Grupo 1</span> - 15 de diciembre de 2023 - Grandes Contribuyentes.</li>
+                        <li><span class="nota-destacado">Grupo 2</span> - 1 de febrero de 2024 - Declarantes del Impuesto sobre la Renta (no grandes contribuyentes).</li>
+                        <li><span class="nota-destacado">Grupo 3</span> - 1 de marzo de 2024 - No declarantes del Impuesto sobre la Renta.</li>
+                    </ul>
+                    <p class="nota-firma">@Jennycangrejo</p>
+                </div>
+            </div>
+        </section>
     </section>
-    <section id="servicios-previa">
-        <div class="services-container">
-            <h2 class="services-title">¿Cómo puedo ayudarte?</h2>
-            <p class="services-subtitle">
-                Ofrezco servicios personalizados para mejorar tus finanzas, cumplir con tus obligaciones tributarias y llevar tus negocios al siguiente nivel.
+
+
+    <!-- developer hidden section -->
+    <section id="about-developer" style="display: none;">
+        <div class="easter-egg-container">
+            <h2>¡Vaya, me encontraste! 🕵️‍♀️ Me veo obligado a presentarme...</h2>
+            <p>
+                Soy Daniel Cangrejo, un apasionado desarrollador web. Diseñé esta página :D. ¡Espero que la hayas disfrutado!
             </p>
-            <div class="services-grid">
-                <div class="service-card">
-                    <img src="assets/previus-services-logo1.png" alt="Icono Contabilidad" />
-                    <h3>Gestión Contable</h3>
-                    <p>Mantén tus registros contables organizados y cumple con las normativas de manera efectiva.</p>
-                </div>
-                <div class="service-card">
-                    <img src="assets/previus-services-logo2.png" alt="Icono Finanzas" />
-                    <h3>Asesoría Financiera</h3>
-                    <p>Optimiza tus ingresos y toma decisiones financieras acertadas con estrategias personalizadas.</p>
-                </div>
-                <div class="service-card">
-                    <img src="assets/previus-services-logo3.png" alt="Icono Tributario" />
-                    <h3>Consultoría Tributaria</h3>
-                    <p>Minimiza riesgos fiscales y garantiza el cumplimiento tributario de tu empresa.</p>
-                </div>
-            </div>
+            <p>
+                Si te interesa conocer más sobre mi trabajo, o simplemente quieres saber más de mi, te invito a visitar mi 
+                <a href="https://github.com/DanielCangrejo" target="_blank">GitHub</a>, donde comparto código, ideas y mis redes sociales para mantenernos en contacto.
+            </p>
+            <p>¡Te deseo mucho éxito en todo lo que emprendas, especialmente en tus temas contables! 😊</p>
+            <p><a href="#inicio">Volver al Inicio</a></p>
         </div>
     </section>
-    <section id="notas-importantes">
-        <div class="notas-container">
-            <h2 class="notas-titulo">Notas Importantes</h2>
-    
-            <!-- Primera nota -->
-            <div class="nota">
-                <h3 class="nota-titulo">Impuesto ICA Bogotá</h3>
-                <p class="nota-descripcion">
-                    ¿Eres profesional independiente o tienes un contrato de prestación de servicios? 
-                    Sabías que si obtuviste ingresos superiores a 
-                    <span class="nota-destacado">$81.982.396</span> durante el año 2024, estás obligado a presentar la declaración del impuesto de industria y comercio en Bogotá.
-                </p>
-                <p class="nota-firma">@Jennycangrejo</p>
-            </div>
-    
-            <!-- Segunda nota -->
-            <div class="nota">
-                <h3 class="nota-titulo">Aviso Importante</h3>
-                <p class="nota-descripcion">
-                    Según la <span class="nota-destacado">Resolución 139 de 2023</span>, todos los declarantes, incluso los voluntarios, deben hacerlo con firma electrónica a partir de hoy, según la <span class="nota-destacado">DIAN</span>.
-                </p>
-                <p class="nota-firma">@Jennycangrejo</p>
-            </div>
-    
-            <!-- Tercera nota -->
-            <div class="nota">
-                <h3 class="nota-titulo">Proyecto Resolución</h3>
-                <p class="nota-descripcion">
-                    Calendario de implementación para el documento equivalente electrónico tiquete de máquina registradora con sistema P.O.S., según el tipo de contribuyente:
-                </p>
-                <ul class="nota-lista">
-                    <li><span class="nota-destacado">Grupo 1</span> - 15 de diciembre de 2023 - Grandes Contribuyentes.</li>
-                    <li><span class="nota-destacado">Grupo 2</span> - 1 de febrero de 2024 - Declarantes del Impuesto sobre la Renta (no grandes contribuyentes).</li>
-                    <li><span class="nota-destacado">Grupo 3</span> - 1 de marzo de 2024 - No declarantes del Impuesto sobre la Renta.</li>
-                </ul>
-                <p class="nota-firma">@Jennycangrejo</p>
-            </div>
-        </div>
-    </section>
+
+    <!-- footer -->
     <footer>
         <div class="footer-container">
-            <!-- Sección izquierda -->
+            <!-- Left Section -->
             <div class="footer-left">
                 <h2>Contáctame</h2>
                 <p><strong>Jenny Carolina Cangrejo Sáenz</strong></p>
@@ -123,14 +164,14 @@
                 <p><strong>Correo:</strong> jenny.cangrejo@email.com</p>
             </div>
     
-            <!-- Línea divisoria -->
+            <!-- Divider line -->
             <div class="footer-divider"></div>
     
-            <!-- Sección derecha -->
+            <!-- Right Section -->
             <div class="footer-right">
                 <h2>Mis redes sociales</h2>
                 <div class="social-links">
-                    <a href="https://wa.me/3204827132" target="_blank" class="social-icon">
+                    <a href="https://api.whatsapp.com/send?phone=+573204827132&text=Hola%20Jenny,%20vi%20tu%20web,%20mi%20nombre%20es%20...,%20me%20interesan%20tus%20servicios%20contables!" target="_blank" class="social-icon">
                         <i class="fab fa-whatsapp"></i>
                     </a>
                     <a href="https://www.instagram.com/jenny_cangrejo" target="_blank" class="social-icon">
@@ -140,10 +181,75 @@
                         <i class="fab fa-linkedin"></i>
                     </a>
                 </div>
-                <p><strong>&copy; 2025 Jenny Cangrejo - Todos los derechos reservados</strong></p>
+                <p class="copyright"><strong>&copy; 2025 Jenny Cangrejo - Todos los derechos reservados</strong></p>
+                <p class="unplash-credits">Imágenes proporcionadas por <a href="https://unsplash.com" target="_blank">Unsplash</a>.</p>
+                <p class="developed-by">Página diseñada por: <a href="#about-developer">Daniel Cangrejo</a></p>
             </div>
         </div>
     </footer>
-    
+
+    <!-- Scripts for hide and show sections-->
+    <script>
+    // Function to hide all sections
+    function hideAllSections() {
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            console.log("Section: " + section.id)
+            section.style.display = 'none'; //Updating attr's section
+        });
+    }
+
+    // Function to show selected section 
+    function showSection(id) {
+        hideAllSections(); //Hide all sections of the page
+        const mainSection = document.getElementById(id);
+
+        //Gasp animation
+        gsap.fromTo(mainSection, 
+            { opacity: 0 },  //Playing with visibility
+            { opacity: 1, duration: 1.5, ease: "power2.out" }  
+        );
+
+        mainSection.style.display = 'block';
+        mainSection.scrollIntoView({ behavior: 'smooth' });
+        const subsections = mainSection.querySelectorAll('section');
+        //Iterate over all subsections of the main section to show them 
+        if (subsections.length > 0) { 
+            subsections.forEach(section => {
+                console.log("Section: " + section.id)
+                section.style.display = 'block';
+            });
+        }
+
+        // Update URL  
+        history.pushState(null, '', `#${id}`);
+    }
+
+    /* Oldest version
+    //Capture the action (click) on the <a> element
+    document.querySelector('a[href="#sobre-daniel"]').addEventListener('click', function(e) {
+        e.preventDefault(); // To avoid refreshing the page
+        showSection('sobre-daniel'); // Show the section with id ('sobre-daniel')
+    });
+
+    document.querySelector('a[href="#inicio"]').addEventListener('click', function(e) {
+        //console.log("test")
+        e.preventDefault();
+        showSection('inicio');
+    });
+
+    });
+    */
+
+    //Newest version
+    document.querySelectorAll('a[href^="#"]').forEach(link => { //Capture action
+        link.addEventListener('click', function (e) {
+            e.preventDefault();  // To avoid refreshing the page
+            const sectionId = this.getAttribute('href').substring(1); // Remove # to get id dynamically
+            showSection(sectionId); 
+        });
+    });
+
+    </script>    
 </body>
 </html>
