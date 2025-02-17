@@ -879,7 +879,7 @@ footer {
 
 /* Texto debajo de la imagen */
 .caption {
-   font-family: 'Satisfy', cursive; 
+    font-family: 'Satisfy', cursive; 
     font-size: 2rem;
     color: #6F5D44;
     margin-top: 10px;
@@ -915,3 +915,423 @@ footer {
     }
 }
 
+/*-----------------------------------------  Services Styles --------------------------------------- */
+/* ---------- introduction services ---------------*/
+#introduccion-servicios {
+    padding: 50px 20px;
+    background-color: #f7f7fc; /* Fondo suave */
+    text-align: center;
+}
+
+.section-title {
+    font-size: 4rem !important; 
+    margin-bottom: 80px !important;
+}
+
+.intro-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro-content .text {
+    flex: 1;
+    max-width: 600px;
+    padding-left: 30px; /* Añadir espacio en el lado izquierdo */
+}
+
+.intro-content h2 {
+    font-family: 'Satisfy', cursive;
+    font-size: 2.5rem;
+    color: #6F5D44;
+    margin-bottom: 20px;
+}
+
+.intro-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.intro-content .image {
+    flex: 1;
+    max-width: 400px;
+    padding-left: 20px;
+}
+
+.intro-content .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ---------- details services ---------------*/
+#services-details {
+    padding: 40px 20px; 
+    background-color: #F7F7FC;
+    text-align: center; 
+}
+
+.service-category h3 {
+    font-family: 'Satisfy', cursive;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #6F5D44;
+    margin-bottom: 15px;
+    text-align: center; /* Centra el título de cada categoría */
+}
+
+.main-service-card h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: center; /* Centra el título del servicio dentro de la tarjeta */
+}
+
+.main-service-card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #555;
+    line-height: 1.4;
+    text-align: center; /* Centra la descripción del servicio dentro de la tarjeta */
+}
+
+
+.service-grid {
+    display: flex;
+    flex-wrap: wrap; /* Esto permite que las tarjetas se acomoden en múltiples filas */
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+/* Tarjetas de servicio */
+.main-service-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 310px; /* Esto es el ancho fijo para pantallas más grandes */
+    height: 180px;
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.main-service-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.main-service-card i {
+    font-size: 4rem;
+    color: #6F5D44;
+    margin-bottom: 5px;
+}
+
+.main-service-card h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.main-service-card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Responsive Desing */
+@media (max-width: 768px) {
+    .service-grid {
+        justify-content: center; /* Centra las tarjetas en pantallas pequeñas */
+    }
+
+    .main-service-card {
+        width: 100%; /* Hace que las tarjetas ocupen todo el ancho disponible */
+        max-width: 310px; /* Asegura que no se agranden demasiado */
+        margin-bottom: 20px; /* Añade espacio entre las tarjetas */
+    }
+}
+
+/*-----------------------------------------  Resources Styles --------------------------------------- */
+#recursos {
+    padding: 50px 20px;
+    background-color: #f7f7fc; /* Fondo suave */
+    text-align: center;
+}
+
+#recursos .section-title {
+    padding: 20px 40px; /* Espaciado interno */
+    background-color: #f9f5f0; /* Fondo cálido (beige claro) */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Sombra más marcada */
+    max-width: 650px; /* Limita el ancho */
+    margin: 0 auto 70px auto !important; /* Reduce el margen inferior */
+    text-align: center; /* Centra el texto */
+    position: relative; /* Para la línea decorativa */
+    border-top: 6px solid #6F5D44; /* Línea decorativa superior */
+}
+
+#recursos .section-title h2 {
+    font-size: 2.5rem;
+    font-family: 'Satisfy', cursive;
+    color: #6F5D44; /* Color café */
+    margin-bottom: 15px; /* Espacio debajo del título */
+}
+
+#recursos .section-title p {
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    color: #555; /* Gris oscuro */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin: 0;
+    padding: 0 10px; /* Pequeño margen interno para texto */
+}
+
+/* Lista de recursos */
+.recursos-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cada recurso */
+.recurso-item {
+    display: flex;
+    align-items: center; /* Alinea la imagen y el texto verticalmente */
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en pantallas pequeñas */
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px; /* Limita el ancho de las tarjetas */
+    margin: 0 auto;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    gap: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.recurso-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Texto del recurso */
+.recurso-text {
+    flex: 2; /* Ocupa más espacio que la imagen */
+    min-width: 250px; /* Asegura que el texto no sea demasiado pequeño */
+}
+
+.recurso-text h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.recurso-text p {
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Imagen del recurso */
+.recurso-image {
+    flex: 1; /* La imagen ocupa menos espacio que el texto */
+    max-width: 200px; /* Ajusta el tamaño máximo de la imagen */
+}
+
+.recurso-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón centrado */
+.recurso-boton {
+    width: 100%; /* Abarca todo el ancho del contenedor */
+    display: flex;
+    justify-content: center; /* Centra el botón */
+    position: relative; /* Necesario para el ::before */
+    padding-top: 25px; /* Espaciado entre la línea y el botón */
+}
+
+.recurso-boton a {
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    background-color: #6F5D44;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.recurso-boton a:hover {
+    background-color: #4E4A36;
+    transform: scale(1.05);
+}
+
+.recurso-boton::before {
+    content: ""; /* Línea divisoria */
+    position: absolute;
+    top: 0; /* Línea en la parte superior de recurso-boton */
+    left: 0;
+    width: 100%;
+    height: 3px; /* Grosor de la línea */
+    background-color: #6F5D44; /* Color café */
+    border-radius: 5px; /* Opcional: puedes ajustarlo si quieres bordes suaves */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .recurso-item {
+        flex-direction: column; /* Coloca los elementos en columna */
+        text-align: center;
+    }
+
+    .recurso-text {
+        max-width: 100%; /* El texto ocupa todo el ancho disponible */
+    }
+
+    .recurso-image {
+        max-width: 200px;
+        margin: 20px 0;
+    }
+}
+
+/* ----------------------------- Contacto ------------------------ */
+#contacto {
+    padding: 50px 20px;
+    background-color: #f7f7fc; /* Fondo suave */
+    text-align: center;
+}
+
+.contacto-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contacto-header h2 {
+    font-size: 2.5rem;
+    font-family: 'Satisfy', cursive;
+    color: #6F5D44; /* Color café */
+    margin-bottom: 10px;
+}
+
+.contacto-header p {
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.contacto-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contacto-form label {
+    display: block;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+    width: 96%;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.contacto-form input:focus,
+.contacto-form textarea:focus {
+    border-color: #6F5D44; /* Color café */
+    outline: none;
+}
+
+.contacto-form button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: #6F5D44; /* Color café */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contacto-form button:hover {
+    background-color: #4E4A36; /* Café más oscuro */
+    transform: scale(1.05);
+}
+
+.contacto-whatsapp {
+    margin-top: 30px;
+}
+
+.contacto-whatsapp a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #25d366; /* Verde WhatsApp */
+    transition: color 0.3s ease;
+}
+
+.contacto-whatsapp a:hover {
+    color: #1da94b; /* Verde más oscuro */
+}
+
+.contacto-whatsapp p {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contacto-whatsapp img {
+    width: 25px;
+    height: 25px;
+}
