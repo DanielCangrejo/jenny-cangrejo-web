@@ -1,0 +1,1 @@
+This is a simple, static website built for my sister to promote her accounting services. It includes basic information about her experience, offered services, and contact details. The site was developed using only HTML, CSS, and JavaScript, with a clean and professional design.
